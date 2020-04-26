@@ -36,7 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onCustomDialog() {
         final Dialog dialog = new Dialog(context);
+
+        //다이얼로그에서 보여줄 화면 설정
         dialog.setContentView(R.layout.activity_dialog);
+
+        //배경화면 설정, 불투명하게 설정
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
         Button popup_close = (Button) dialog.findViewById(R.id.popup_close);
@@ -49,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
         dialog.show();
     }
-
 }
 
 
